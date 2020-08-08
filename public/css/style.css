@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  color: #212121;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 2rem 0;
+  padding: 2rem;
+  max-width: 550px;
+  margin: auto;
+}
+
+.logo {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 1.7rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.logo::before {
+  content: "";
+  display: block;
+  background: url(../images/logo.svg);
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 1rem;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.page__content > * {
+  margin: 1rem 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > * {
+  margin: 0.5rem 0;
+}
+
+textarea {
+  resize: none;
+  min-height: 10rem;
+}
+
+.form__field {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  background: #fff;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  padding: 1rem;
+  font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  letter-spacing: -0.7px;
+}
+
+.field__invalid {
+  border-color: red;
+}
+
+.form__button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #65a1f8;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.entry__headline {
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-bottom: 0.5rem;
+}
+
+.entry__container {
+  margin: 1rem 0;
+}
+
+.entry__item {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.entry_title {
+  min-width: 40%;
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 35em) {
+  .entry_title {
+    min-width: 30%;
+  }
+}
+
+.entry__value {
+  flex: 1;
+  font-weight: 600;
+}

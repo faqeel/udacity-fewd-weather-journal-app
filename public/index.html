@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Journal</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="page__header">
+        <div class="logo">
+          Weather Journal App
+        </div>
+      </header>
+      <main class="page__content">
+        <form class="form">
+          <input class="form__field" type="text" id="zip" placeholder="Enter zip code" />
+          <textarea class="form__field" id="feelings" placeholder="Enter your feelings"></textarea>
+          <button class="form__button" id="generate">Generate</button>
+        </form>
+        <section class="entry" id="entryHolder">
+          <header class="entry__headline">Most Recent Entry</header>
+          <div class="entry__container">
+            <article class="entry__item">
+              <p class="entry_title">Date</p>
+              <p class="entry__value" id="date">-</p>
+            </article>
+            <article class="entry__item">
+              <p class="entry_title">Temperature</p>
+              <p class="entry__value" id="temp">-</p>
+            </article>
+            <article class="entry__item">
+              <p class="entry_title">Feelings</p>
+              <p class="entry__value" id="content">-</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
