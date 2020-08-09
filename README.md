@@ -25,10 +25,10 @@ Run `npm start` to running local server on `http://localhost:3000`.
 ## Dependencies
 
 - [Express](https://expressjs.com/) - minimalist web framework for node.js
-- [Body-Parser]() - Node.js body parsing middleware
-- [CORS]() - A Connect/Express middleware that can be used to enable CORS with various options
-- [Morgan]() - HTTP request logger middleware for node.js
+- [Body-Parser](http://expressjs.com/en/resources/middleware/body-parser.html) - Node.js body parsing middleware
+- [CORS](http://expressjs.com/en/resources/middleware/cors.html) - A Connect/Express middleware that can be used to enable CORS with various options
+- [Morgan](http://expressjs.com/en/resources/middleware/morgan.html) - HTTP request logger middleware for node.js
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details
